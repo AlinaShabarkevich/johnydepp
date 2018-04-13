@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf.8">
+        <link rel="stylesheet" href="styeForm.css">
         <title>Набір в школу акторів</title>
         <link rel="icon" href="ImageForm/1.jpg" type="text/css">
     </head>
     <body>
-        <h2>Анкета для молодих , перспеткивний і креативних акторів</h2>
-        <br><img src="ImageForm/2.jpg"  align="left" width="200" height="210" vspace="5" hspace="5">
-        <br>
+        <h2 class = "brd"><strong>Анкета для молодих , перспеткивний і креативних акторів</strong></h2>
         Ім'я<br>
-                <input type = "text" id = "form_fname"  name = "First name">
-        <br><br>
-        Прізвище<br>
-                <input type = "text" id = "form_sname" name = "Second name">
-        <br><br>
-        E-mail<br>
-            <input type = "email" id = "form_email" name = "email">
-        <br><br>
-        Пароль для авторизації <br>     
-        <input type="password" name="Password" placeholder="***********"><br>
-        <form name="sex" action="" method="post">
+                <input class="forms" type = "text" id = "form_fname"  name = "First name">
         <br>
+        Прізвище<br>
+                <input class="forms" type = "text" id = "form_sname" name = "Second name">
+        <br>
+        E-mail<br>
+            <input class="forms" type = "email" id = "form_email" name = "email">
+        <br>
+        Пароль для авторизації <br>     
+        <input class="forms" type="password" name="Password" placeholder="***********"><br>
+        <form name="sex" action="" method="post">
         Стать:<br>
         <input type="radio" name="Sex" value="Female"/> Ж <br/>
         <input type="radio" name="Sex" value="Male"/> Ч <br/>
-        <br>
 </form>
         Скільки Вам років?
         <br>
-        <select name="menu" size="1">
+        <select class="forms" name="menu" size="1">
             <option selected="selected" value="first">16-18</option>
             <option value="second">19-25</option>
             <option value="third">26-30</option>
             <option value="fourth">31 і більше</option>
         </select>
-        <br><br>
+        <br>
         З якого Ви міста?
         <br>
         <select name = "menu" size ="7">
@@ -53,7 +51,7 @@
             <option value = "town_13" value = "first">Херсон</option>
             <option value = "town_14" value = "first">Крим</option>
         </select>
-        <br><br>
+        <br>
         Якою мовою володієте?
         <br>
         <input type="checkbox" name="city" value="Êàíàäà" /> English<br />
@@ -64,12 +62,18 @@
         <input type="checkbox" name="city" value="²ñïàí³ÿ" /> Інше <br /> 
         <br>
         Про себе<br>
-            <textarea name = "about" id = "f_about"></textarea>
-        <br><br>
+            <textarea class="aboutMe" name = "about" id = "f_about"></textarea>
+        <br>
+        <form enctype="multipart/form-data" method="post">
+        <p>Завантажити фото </p>
+        <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+        <br>
+        <input type="submit" value="Завантажити"></p>
+        </form>
         Номер телефону <br>
-            <input type = "text" id = "form_phone" name = "phone">
-        <br><br>
-            <input type = "submit" value = "Підтвердити">
+            <input class="forms" type = "text" id = "form_phone" name = "phone">
+        <br>
+            <input class="subm" type = "submit" value = "Підтвердити">
         <br>
     </body>
 </html>

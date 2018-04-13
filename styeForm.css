@@ -1,0 +1,36 @@
+body{
+    background-image: url("ImageForm/back.jpg");
+    text-align: center;
+    font-family: cursive;
+    font-size: 22px;
+    color: #003366;
+}
+h2{
+    font-family:monospace;
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(97,119,171)
+}
+.brd {
+    border: 4px double black; 
+    background: #f2f2f2; 
+    padding: 10px; 
+}
+.forms{
+    background: #f0f0f0; 
+    border: 1px solid black; 
+    padding: 15px; 
+    margin: 10px; 
+}
+.aboutMe{
+    background: #f0f0f0; 
+    border: 1px solid black; 
+    padding: 25px; 
+    margin: 10px; 
+}
+.subm{
+    border-radius: 5px;
+    border: 1px solid black; 
+    font-size: 20px;
+}
